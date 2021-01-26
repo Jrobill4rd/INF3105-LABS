@@ -27,8 +27,9 @@ Point::Point(double _x, double _y)
 
 
 double Point::distance(const Point& point) const {
-  // À compléter
-  return 0;
+  double dx = point.x - x;
+  double dy = point.y - y;
+  return sqrt(pow(dx,2) + pow(dy,2));
 }
 
 

@@ -15,7 +15,7 @@ INSTRUCTIONS:
    Si vous sautez une étape ou tentez d'aller trop rapidement,
    alors vous risquez d'introduire des bogues!
 *************************************************************************/
-
+/*
 int main1(int argc, const char** args)
 {
   std::cout << "Bienvenue au cours INF3105 en C++ !" << std::endl;
@@ -30,7 +30,7 @@ int main2(int argc, const char** args)
 }
 
 
-int main(int argc, const char** args)
+int main4(int argc, const char** args)
 {
   Point point;
   std::cout << "Entrez un point:" << std::endl;
@@ -39,8 +39,8 @@ int main(int argc, const char** args)
   std::cout << point << std::endl;
   return 0;
 }
-
-int main5(int argc, const char** args)
+*/
+int main(int argc, const char** args)
 {
   Point a(0,0);
   Point b(4,3);
@@ -48,12 +48,14 @@ int main5(int argc, const char** args)
   std::cout << "Distance("<< a << "," << b << ")=" << d << std::endl;
   return 0;
 }
-
-int main6(int argc, const char** args)
+/*
+int main(int argc, const char** args)
 {
   int nb;
   std::cin >> nb;
-
+  for(int i = 0 ; i < nb ; i++){
+    std::cin 
+  }
 
   return 0;
-}
+}*/
