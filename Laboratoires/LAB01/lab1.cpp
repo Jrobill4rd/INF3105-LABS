@@ -39,7 +39,7 @@ int main4(int argc, const char** args)
   std::cout << point << std::endl;
   return 0;
 }
-*/
+
 int main(int argc, const char** args)
 {
   Point a(0,0);
@@ -48,14 +48,23 @@ int main(int argc, const char** args)
   std::cout << "Distance("<< a << "," << b << ")=" << d << std::endl;
   return 0;
 }
-/*
+*/
 int main(int argc, const char** args)
 {
-  int nb;
-  std::cin >> nb;
-  for(int i = 0 ; i < nb ; i++){
-    std::cin 
-  }
-
-  return 0;
-}*/
+ int nb;
+    std::cin >> nb;
+    Point* points = new Point[nb];
+    for(int i=0;i<nb;i++)
+        std::cin >> points[i];
+    double distance_minimal = std::numeric_limits<double>::infinity();
+    for(int a=0;a<nb;a++)
+        for(int b=a+1;b<nb;b++)
+        {
+            double d = points[a].distance(points[b]);
+            if(d<distance_minimal)
+                distance_minimal = d;
+        }
+    std::cout << distance_minimal << std::endl;
+    delete[] points;
+    return 0;
+}
